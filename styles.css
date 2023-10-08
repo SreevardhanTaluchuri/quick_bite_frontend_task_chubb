@@ -1,0 +1,690 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+}
+
+.appWrapper {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: rgb(237, 240, 235);
+  display: flex;
+  align-items: center;
+  justify-content: normal;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper {
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
+.appWrapper .headerWrapper {
+  max-width: 100vw;
+  width: 100%;
+  z-index: 10;
+  height: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(237, 240, 235);
+}
+.appWrapper .headerWrapper .headerContainer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.appWrapper .headerWrapper .headerContainer .headerTitle {
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #18204a;
+  font-family: "Poppins";
+  letter-spacing: 0px;
+  line-height: 52px;
+}
+.appWrapper .headerWrapper .headerContainer .headerButtonsContainer {
+  width: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 50px 0;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .headerWrapper .headerContainer .headerButtonsContainer {
+    display: none;
+  }
+}
+.appWrapper .headerWrapper .headerContainer .headerButtonsContainer .headerSignInButton {
+  width: 142px;
+  height: 62px;
+  background-color: transparent;
+  border-radius: 16px;
+  border: 1px solid rgb(24, 32, 74);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 28px;
+  color: rgb(24, 32, 74);
+  font-family: Poppins;
+}
+.appWrapper .headerWrapper .headerContainer .headerButtonsContainer .headerSignUpButton {
+  width: 150px;
+  height: 62px;
+  background-color: rgb(24, 32, 74);
+  border-radius: 16px;
+  border: rgb(24, 32, 74);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 28px;
+  color: white;
+  font-family: Poppins;
+}
+.appWrapper .heroContainer {
+  width: 80%;
+  padding: 150px 0 0 0;
+  margin: 10px 0 4px 0;
+  height: 460px;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .heroContainer {
+    width: 100%;
+    height: 360px;
+  }
+}
+.appWrapper .heroContainer .heroTitleContainer {
+  width: 92%;
+  padding: 30px 0 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .heroContainer .heroTitleContainer {
+    gap: 5px;
+    width: 350px;
+    margin: 0 auto;
+  }
+}
+.appWrapper .heroContainer .heroTitleContainer .heroImg1 {
+  width: 192px;
+  height: 264px;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .heroContainer .heroTitleContainer .heroImg1 {
+    width: 100px;
+    height: 150px;
+    padding-left: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .heroContainer .heroTitleContainer .heroImg1 {
+    padding-left: 10px;
+  }
+}
+.appWrapper .heroContainer .heroTitleContainer .heroTitle {
+  font-size: 72px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 92px;
+  color: rgb(24, 32, 74);
+  font-family: Poppins;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .heroContainer .heroTitleContainer .heroTitle {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: normal;
+    color: rgb(24, 32, 74);
+    font-family: Poppins;
+    width: 400px;
+  }
+}
+.appWrapper .heroContainer .heroSearchWrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 0px -10px 0px 0px;
+  padding: 0 0 10px 0;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .heroContainer .heroSearchWrapper {
+    margin: 0 0 0 -30px;
+  }
+}
+.appWrapper .heroContainer .heroSearchWrapper .searchContainer {
+  border-radius: 15px;
+  background-color: white;
+  width: 470px;
+}
+.appWrapper .heroContainer .heroSearchWrapper .searchContainer .fa {
+  font-size: 10px;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .heroContainer .heroSearchWrapper .searchContainer {
+    width: 150px;
+  }
+}
+.appWrapper .heroContainer .heroSearchWrapper .searchContainer .searchBar {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: normal;
+  color: rgb(160, 160, 160);
+  font-family: Poppins;
+  width: 400px;
+  height: 60px;
+  border: 0;
+  border-radius: 15px;
+  padding: 0 15px;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .heroContainer .heroSearchWrapper .searchContainer .searchBar {
+    width: 100px;
+    height: 40px;
+    font-size: 10px;
+  }
+}
+.appWrapper .heroContainer .heroSearchWrapper .searchButton {
+  width: 130px;
+  height: 62px;
+  background-color: rgb(24, 32, 74);
+  border-radius: 16px;
+  border: rgb(24, 32, 74);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 28px;
+  color: white;
+  font-family: Poppins;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .heroContainer .heroSearchWrapper .searchButton {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(24, 32, 74);
+    border-radius: 8px;
+    border: rgb(24, 32, 74);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: normal;
+    color: white;
+    font-family: Poppins;
+  }
+}
+.appWrapper .heroContainer .heroSearchWrapper .heroImg2 {
+  margin: -40px 0 0 20px;
+  width: 152px;
+  height: 126px;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .heroContainer .heroSearchWrapper .heroImg2 {
+    width: 80px;
+    height: 100px;
+    margin-left: 0px;
+  }
+}
+.appWrapper .howWrapper {
+  max-width: 100vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.appWrapper .howWrapper .howContainer {
+  width: 80%;
+}
+.appWrapper .howWrapper .howContainer .howTitleContainer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(24, 32, 74);
+  border-top: 2px solid rgb(24, 32, 74);
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .howWrapper .howContainer .howTitleContainer {
+    height: 50px;
+  }
+}
+.appWrapper .howWrapper .howContainer .howTitleContainer .howTitle {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 48px;
+  color: rgb(24, 32, 74);
+  font-family: Poppins;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .howWrapper .howContainer .howTitleContainer .howTitle {
+    font-size: 20px;
+  }
+}
+.appWrapper .howWrapper .howContainer .howContentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(24, 32, 74);
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .howWrapper .howContainer .howContentContainer {
+    flex-direction: column;
+  }
+}
+.appWrapper .howWrapper .howContainer .howContentContainer .howContent {
+  border-right: 2px solid rgb(24, 32, 74);
+  padding: 0 7px 0 0px;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .howWrapper .howContainer .howContentContainer .howContent {
+    border: 0px;
+    width: 88%;
+  }
+}
+.appWrapper .howWrapper .howContainer .howContentContainer .howContent:nth-child(3) {
+  border-right: 0;
+  padding: 0 4px 0 7px;
+}
+.appWrapper .howWrapper .howContainer .howContentContainer .howContent .howImg {
+  width: 320px;
+  height: 320px;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .howWrapper .howContainer .howContentContainer .howContent .howImg {
+    width: 220px;
+    height: 220px;
+  }
+}
+.appWrapper .howWrapper .howContainer .howContentContainer .howContent .howContentTitle {
+  margin: 20px 0;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 48px;
+  color: #18204a;
+  font-family: Poppins;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .howWrapper .howContainer .howContentContainer .howContent .howContentTitle {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: 48px;
+    color: #18204a;
+    font-family: Poppins;
+  }
+}
+.appWrapper .howWrapper .howContainer .howContentContainer .howContent .howContentText {
+  max-width: 319px;
+  padding: 0 0 100px 0;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: 30px;
+  color: #18204a;
+  font-family: Poppins;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .howWrapper .howContainer .howContentContainer .howContent .howContentText {
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #18204a;
+    font-family: Poppins;
+  }
+}
+.appWrapper .workWrapper {
+  max-width: 100vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.appWrapper .workWrapper .workContainer {
+  width: 80%;
+}
+.appWrapper .workWrapper .workContainer .workTitleContainer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(24, 32, 74);
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .workWrapper .workContainer .workTitleContainer {
+    height: 50px;
+  }
+}
+.appWrapper .workWrapper .workContainer .workTitleContainer .workTitle {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 48px;
+  color: rgb(24, 32, 74);
+  font-family: Poppins;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .workWrapper .workContainer .workTitleContainer .workTitle {
+    font-size: 18px;
+  }
+}
+.appWrapper .workWrapper .workContainer .workContentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.appWrapper .workWrapper .workContainer .workContentContainer .workContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 20px 0;
+  border-bottom: 2px solid rgb(24, 32, 74);
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .workWrapper .workContainer .workContentContainer .workContent {
+    flex-direction: column;
+    width: 98%;
+  }
+}
+.appWrapper .workWrapper .workContainer .workContentContainer .workContent .workImgContainer .workImg {
+  width: 664px;
+  height: 360px;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .workWrapper .workContainer .workContentContainer .workContent .workImgContainer .workImg {
+    width: 250px;
+    height: 150px;
+  }
+}
+.appWrapper .workWrapper .workContainer .workContentContainer .workContent .workContentTextContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 0 0 40px;
+}
+.appWrapper .workWrapper .workContainer .workContentContainer .workContent .workContentTextContainer .workContentTitle {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 48px;
+  color: #18204a;
+  font-family: Poppins;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .workWrapper .workContainer .workContentContainer .workContent .workContentTextContainer .workContentTitle {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: 48px;
+    color: #18204a;
+    font-family: Poppins;
+  }
+}
+.appWrapper .workWrapper .workContainer .workContentContainer .workContent .workContentTextContainer .workContentText {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: 30px;
+  color: #18204a;
+  font-family: Poppins;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .workWrapper .workContainer .workContentContainer .workContent .workContentTextContainer .workContentText {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: normal;
+    color: #18204a;
+    font-family: Poppins;
+  }
+}
+.appWrapper .workWrapper .workContainer .workContentContainer .workContent .workContentTextContainer .workContentButton {
+  width: 192px;
+  height: 62px;
+  background-color: transparent;
+  border-radius: 16px;
+  border: 1px solid rgb(24, 32, 74);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 28px;
+  color: #18204a;
+  font-family: Poppins;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .workWrapper .workContainer .workContentContainer .workContent .workContentTextContainer .workContentButton {
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid rgb(24, 32, 74);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: normal;
+    color: #18204a;
+    font-family: Poppins;
+  }
+}
+.appWrapper .downloadWrapper {
+  max-width: 100vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.appWrapper .downloadWrapper .downloadContainer {
+  width: 80%;
+}
+.appWrapper .downloadWrapper .downloadContainer .downloadTitleContainer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(24, 32, 74);
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .downloadWrapper .downloadContainer .downloadTitleContainer {
+    height: 50px;
+  }
+}
+.appWrapper .downloadWrapper .downloadContainer .downloadTitleContainer .downloadTitle {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 48px;
+  color: rgb(24, 32, 74);
+  font-family: Poppins;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .downloadWrapper .downloadContainer .downloadTitleContainer .downloadTitle {
+    font-size: 20px;
+  }
+}
+.appWrapper .downloadWrapper .downloadContainer .downloadContentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .downloadWrapper .downloadContainer .downloadContentWrapper {
+    flex-direction: column-reverse;
+  }
+}
+.appWrapper .downloadWrapper .downloadContainer .downloadContentWrapper .downloadContentConatiner .downloadContentTitle {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 48px;
+  color: #18204a;
+  font-family: Poppins;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .downloadWrapper .downloadContainer .downloadContentWrapper .downloadContentConatiner .downloadContentTitle {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: normal;
+    color: #18204a;
+    font-family: Poppins;
+    margin: 30px 0 0 0;
+  }
+}
+.appWrapper .downloadWrapper .downloadContainer .downloadContentWrapper .downloadContentConatiner .downloadContentText {
+  margin: 20px 0 40px 0;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: 30px;
+  color: #18204a;
+  font-family: Poppins;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .downloadWrapper .downloadContainer .downloadContentWrapper .downloadContentConatiner .downloadContentText {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    line-height: normal;
+    color: #18204a;
+    font-family: Poppins;
+  }
+}
+.appWrapper .downloadWrapper .downloadContainer .downloadContentWrapper .downloadContentConatiner .downloadContentButton {
+  width: 177px;
+  height: 62px;
+  background-color: rgb(24, 32, 74);
+  border-radius: 16px;
+  border: rgb(24, 32, 74);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 28px;
+  color: white;
+  font-family: Poppins;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .downloadWrapper .downloadContainer .downloadContentWrapper .downloadContentConatiner .downloadContentButton {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(24, 32, 74);
+    border-radius: 8px;
+    border: rgb(24, 32, 74);
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: normal;
+    color: white;
+    font-family: Poppins;
+    margin: 0 0 100px 0;
+  }
+}
+.appWrapper .downloadWrapper .downloadContainer .downloadContentWrapper .downloadImageContainer .downloadImg1 {
+  width: 600px;
+  height: 360px;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .downloadWrapper .downloadContainer .downloadContentWrapper .downloadImageContainer .downloadImg1 {
+    width: 350px;
+    height: 260px;
+    margin: 50px 0 0 0;
+  }
+}
+.appWrapper .footerWrapper {
+  background-color: rgb(193, 206, 189);
+  max-height: 304px;
+  height: 100%;
+  max-width: 100vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .footerWrapper {
+    max-height: 580px;
+    align-items: flex-start;
+    padding-top: 70px;
+  }
+}
+.appWrapper .footerWrapper .footerContainer {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 50%;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .footerWrapper .footerContainer {
+    flex-direction: column;
+    padding: 0 0 100px 0;
+  }
+}
+.appWrapper .footerWrapper .footerContainer .footerTitleContainer .footerTitle {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0px;
+  line-height: 42px;
+  color: rgb(24, 32, 74);
+  font-family: Poppins;
+  text-transform: uppercase;
+}
+.appWrapper .footerWrapper .footerContainer .footerContentWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 500px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .footerWrapper .footerContainer .footerContentWrapper {
+    flex-direction: column;
+  }
+}
+.appWrapper .footerWrapper .footerContainer .footerContentWrapper .footerContentContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .appWrapper .footerWrapper .footerContainer .footerContentWrapper .footerContentContainer {
+    margin: 30px 0 0px 0;
+    gap: 5px;
+  }
+}
+.appWrapper .footerWrapper .footerContainer .footerContentWrapper .footerContentContainer .footerText {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: 22px;
+  color: #18204a;
+  font-family: Poppins;
+}
+.appWrapper .footerWrapper .footerContainer .footerContentWrapper .footerContentContainer:nth-child(1) .footerText:nth-child(1) {
+  font-weight: 700;
+}/*# sourceMappingURL=styles.css.map */
